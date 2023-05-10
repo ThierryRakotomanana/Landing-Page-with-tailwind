@@ -5,9 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../dist/output.css" rel="stylesheet">
 </head>
-<body class="min-h-screen grid place-content-center bg-slate-50 dark:bg-black dark:text-white" >
-  <div class="">
-    <a class=" inline-block px-1.5 py-1.5 rounded-lg uppercase tracking-wider font-semibold text-sm bg-indigo-600 text-white" href="./card.html">click here</a>
-  </div>  
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white" >
+  <header class="bg-teal-700 text-white sticky top-0 z-10">
+    <section class="max-w-4xl mx-auto p-5 flex justify-between items-center">
+      <div class="grid grid-cols-2 w-1/6 gap-5">
+        <img class="w-12 h-12" src="./img/moon.svg" alt="moon">
+        <h1>Thierry</h1>
+      </div>
+      <button id="mobile-open-button" class="text-3xl sm:hidden focus:outline-none">
+        &#9776;
+      </button>
+      <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+        <a href="#hero" class="hover:opacity-90">about me</a>
+        <a href="#testimonarial" class="hover:opacity-90">Testimonals</a>
+        <a href="#contact" class="hover:opacity-90">Contact me</a>
+      </nav>
+    </section>
+    <a class="inline-block px-1.5 py-1.5 rounded-lg uppercase tracking-wider font-semibold text-sm bg-indigo-600 text-white" href="./card.html">click here</a>
+  </header>  
 </body>
 </html>
