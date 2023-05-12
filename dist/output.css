@@ -648,6 +648,10 @@ video {
   max-width: fit-content;
 }
 
+.max-w-xl {
+  max-width: 36rem;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -666,6 +670,18 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-normal {
+  justify-content: normal;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -696,6 +712,10 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
   margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.justify-self-end {
+  justify-self: end;
 }
 
 .rounded-lg {
