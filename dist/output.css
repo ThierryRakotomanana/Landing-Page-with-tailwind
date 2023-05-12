@@ -1034,6 +1034,10 @@ video {
     flex-direction: row-reverse;
   }
 
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+
   .sm\:flex-col-reverse {
     flex-direction: column-reverse;
   }
