@@ -565,6 +565,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -655,6 +659,10 @@ video {
   max-width: min-content;
 }
 
+.max-w-6xl {
+  max-width: 72rem;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -693,6 +701,10 @@ video {
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.justify-stretch {
+  justify-content: stretch;
 }
 
 .gap-2 {
