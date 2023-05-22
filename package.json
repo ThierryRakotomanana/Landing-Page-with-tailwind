@@ -1,9 +1,13 @@
 {
   "devDependencies": {
-    "tailwindcss": "^3.3.1"
+    "tailwindcss": "^3.3.1",
+    "vite": "^4.3.7"
   },
   "scripts": {
     "dev": "npx tailwindcss -i src/input.css -o dist/output.css",
-    "dev:watch" : "npx tailwindcss -i src/input.css -o dist/output.css --watch"
+    "dev:watch": "npx tailwindcss -i src/input.css -o dist/output.css --watch"
+  },
+  "dependencies": {
+    "three": "^0.152.2"
   }
 }
