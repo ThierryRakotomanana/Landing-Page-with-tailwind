@@ -1,13 +1,16 @@
 var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
-let angularIcon = document.getElementById('angular');
+let angularLight = document.getElementById('angular-light');
+let angularDark = document.getElementById('angular-dark');
 
 function dark(){
-    angularIcon.src = "./img/angular.svg";
+   angularLight.classList.remove('hidden');
+   angularDark.classList.add('hidden');
 }
 
 function light(){
-    angularIcon.src = "./img/angular_solidBlack.svg";
+    angularLight.classList.add('hidden');
+    angularDark.classList.remove('hidden');
 }
 
 // Change the icons inside the button based on previous settings
