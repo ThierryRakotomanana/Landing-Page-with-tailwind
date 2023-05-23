@@ -2,22 +2,30 @@ var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 let angularLight = document.getElementById('angular-light');
 let angularDark = document.getElementById('angular-dark');
+let ghLight = document.getElementById('gh-white');
+let ghDark = document.getElementById('gh-dark');
 
 function dark(){
    angularLight.classList.remove('hidden');
    angularDark.classList.add('hidden');
+   ghLight.classList.remove('hidden');
+   ghDark.classList.add('hidden');
 }
 
 function light(){
     angularLight.classList.add('hidden');
     angularDark.classList.remove('hidden');
+    ghLight.classList.add('hidden');
+    ghDark.classList.remove('hidden');
 }
 
 // Change the icons inside the button based on previous settings
 if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     themeToggleLightIcon.classList.remove('hidden');
+    dark();
 } else {
     themeToggleDarkIcon.classList.remove('hidden');
+    light();
 }
 
 var themeToggleBtn = document.getElementById('theme-toggle');
