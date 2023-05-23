@@ -53,14 +53,14 @@ themeToggleBtn.addEventListener('click', function() {
 });
 
 themeToggleBtn.addEventListener('mouseover', () => {
-    themeToggleBtn.firstElementChild.classList.remove('fill-slate-100')
+    themeToggleBtn.firstElementChild.classList.remove('fill-slate-800')
     themeToggleBtn.lastElementChild.classList.remove('fill-slate-100')
-    themeToggleBtn.firstElementChild.classList.add('fill-slate-800')
+    themeToggleBtn.firstElementChild.classList.add('fill-slate-100')
     themeToggleBtn.lastElementChild.classList.add('fill-slate-800')
 });
 themeToggleBtn.addEventListener('mouseleave', () => {
-    themeToggleBtn.firstElementChild.classList.add('fill-slate-100')
-    themeToggleBtn.firstElementChild.classList.remove('fill-slate-800')
+    themeToggleBtn.firstElementChild.classList.add('fill-slate-800')
+    themeToggleBtn.firstElementChild.classList.remove('fill-slate-100')
     themeToggleBtn.lastElementChild.classList.add('fill-slate-100')
     themeToggleBtn.lastElementChild.classList.remove('fill-slate-800')
 });
