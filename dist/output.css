@@ -597,6 +597,10 @@ video {
   width: 25%;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
 .w-12 {
   width: 3rem;
 }
@@ -724,6 +728,11 @@ video {
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -762,6 +771,10 @@ video {
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.fill-black {
+  fill: #000;
 }
 
 .fill-slate-100 {
@@ -969,13 +982,39 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+@keyframes colorProgress {
+  0% {
+    fill: url(#gradient-ring);
+  }
+
+  20% {
+    fill: url(#gradient-ring1);
+  }
+
+  30% {
+    fill: url(#gradient-ring2);
+  }
+
+  50% {
+    fill: url(#gradient-ring3);
+  }
+
+  70% {
+    fill: url(#gradient-ring4);
+  }
+
+  100% {
+    fill: url(#gradient-ring5);
+  }
+}
+
+.hover\:animate-colorProgress:hover {
+  animation: colorProgress 1s linear infinite;
+}
+
 .hover\:bg-gray-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
-.hover\:fill-slate-100:hover {
-  fill: #f1f5f9;
 }
 
 .hover\:opacity-90:hover {

@@ -10,6 +10,7 @@ function dark(){
    angularDark.classList.add('hidden');
    ghLight.classList.remove('hidden');
    ghDark.classList.add('hidden');
+   themeToggleDarkIcon.classList.remove('colorProgress')
 }
 
 function light(){
@@ -17,6 +18,7 @@ function light(){
     angularDark.classList.remove('hidden');
     ghLight.classList.add('hidden');
     ghDark.classList.remove('hidden');
+    themeToggleDarkIcon.classList.add('colorProgress')
 }
 
 // Change the icons inside the button based on previous settings
